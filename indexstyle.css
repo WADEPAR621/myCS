@@ -127,6 +127,7 @@ body {
     position: absolute;
     top: 35vh;
     left: 15vh;
+    transition-duration: 1.4s;
 }
 
 .Principal:hover .Sobre_Mi {
@@ -155,9 +156,12 @@ body {
 .Principal:hover .infoPersonal {
   opacity: 100%;
   right: 50vh;
-}
-.Principal:hover .Foto {
+}.Principal:hover .Foto {
   opacity: 100%;
+}.Principal:hover + .FrasePersonal{
+  left: -150vh;
+  opacity: 0%;
+  transform: rotate(-90deg);
 }
 
 .header {
@@ -169,6 +173,7 @@ h1 {
   margin: 0;
   color: var(--color-negro);
   text-align: center;
+  font-family: fantasy;
 }
 h2 {
   margin: 0;
