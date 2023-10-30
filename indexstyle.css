@@ -1,151 +1,186 @@
-
-:root{
-    --color-primario: rgb(63, 7, 93);
-    --color-negro: rgb(0,0,0);
-    --color-blanco: rgb(255,255,255);
-    --color-secundario: rgb(240, 229, 69);
-    --color-intermedio: rgb(95, 95, 95);
+:root {
+  --color-primario: rgb(65, 137, 161);
+  --color-negro: rgb(0, 0, 0);
+  --color-blanco: rgb(255, 255, 255);
+  --color-secundario: rgb(57, 10, 87);
+  --color-intermedio: rgb(95, 95, 95);
 }
-body{
-    background-image: url(https://img.freepik.com/vector-gratis/fondo-pantalla-bokeh-borroso-toque-brillante-diseno-fondo_1017-43485.jpg?size=626&ext=jpg&ga=GA1.1.34264412.1696896000&semt=ais);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 0px;
-    z-index: -1;
-}.Encabezado{
-    background-color: var(--color-primario);
-    top: 0;
-    margin: 0;
-    padding: 0;
+body {
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-pantalla-bokeh-borroso-toque-brillante-diseno-fondo_1017-43485.jpg?size=626&ext=jpg&ga=GA1.1.34264412.1696896000&semt=ais);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0px;
+  z-index: -1;
 }
-
-.FotoPersonal{
-    border-radius: 100%;
-    background-color: var(--color-primario);
-    width: 200px;
-    height: 200px;
-    padding: 2px;
-    place-items: center;
-    justify-content: center;
-    display: flex;
-    position: absolute;
-    left: 175vh;
-    top: 25vh;
-    z-index: 100;
-}.Foto{
-    object-fit: cover;
-    width: 80%;
-    height: 80%;
-    border-radius: 100%;
-}.Foto::after{
-    border-radius: 100%;
-    border-color: var(--color-negro);
-    width: 110%;
-    height: 110%;
-    z-index: 100;
-    position: absolute;
-    top: 0;
+.Encabezado {
+  background-color: var(--color-primario);
+  top: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.Sobre_Mi{
-    border-radius: 100%;
-    background-color: var(--color-primario);
-    width: 200px;
-    height: 200px;
-    padding: 2px;
-    place-items: center;
-    justify-content: center;
-    display: flex;
-    position: absolute;
-    left: 175vh;
-    top: 25vh;
-    transition-duration: 1.4s;
-}.Educacion{
-    border-radius: 100%;
-    background-color: var(--color-primario);
-    width: 200px;
-    height: 200px;
-    padding: 2px;
-    place-items: center;
-    justify-content: center;
-    display: flex;
-    position: absolute;
-    left: 175vh;
-    top: 25vh;
-    transition-duration: 1.4s;
-}.Experiencia{
-    border-radius: 100%;
-    background-color: var(--color-primario);
-    width: 200px;
-    height: 200px;
-    padding: 2px;
-    place-items: center;
-    justify-content: center;
-    display: flex;
-    position: absolute;
-    left: 175vh;
-    top: 25vh;
-    transition-duration: 1.4s;
-    
-}.Habilidades{
-    border-radius: 100%;
-    background-color: var(--color-primario);
-    width: 200px;
-    height: 200px;
-    padding: 2px;
-    place-items: center;
-    justify-content: center;
-    display: flex;
-    position: absolute;
-    left: 175vh;
-    top: 25vh;
-    transition-duration: 1.4s;
-}.relleno{
-    background-color: var(--color-intermedio);
-    position: absolute;
-    width: 100px;
-    height: 15vh;
-    top: 25vh;
-    left: 175vh;
-    border-radius: 45px;
+.FotoPersonal {
+  border-radius: 100%;
+  background-color: var(--color-primario);
+  width: 200px;
+  height: 200px;
+  padding: 2px;
+  place-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  left: 175vh;
+  top: 25vh;
+  z-index: 100;
+}
+.Foto {
+  object-fit: cover;
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+  opacity: 0%;
+  transition-duration: 1.4s;
+}
+.Foto::after {
+  border-radius: 100%;
+  border-color: var(--color-negro);
+  width: 110%;
+  height: 110%;
+  z-index: 100;
+  position: absolute;
+  top: 0;
 }
 
-.Principal:hover .Sobre_Mi{
-    left: 50vh;
-    top: 65vh;
-}.Principal:hover .Educacion{
-    left: 35vh;
-    top: 20vh;
-}.Principal:hover .Experiencia{
-    left: 95vh;
+.Sobre_Mi {
+  border-radius: 100%;
+  background-color: var(--color-primario);
+  width: 200px;
+  height: 200px;
+  padding: 2px;
+  place-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  left: 175vh;
+  top: 25vh;
+  transition-duration: 1.4s;
+}
+.Educacion {
+  border-radius: 100%;
+  background-color: var(--color-primario);
+  width: 200px;
+  height: 200px;
+  padding: 2px;
+  place-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  left: 175vh;
+  top: 25vh;
+  transition-duration: 1.4s;
+}
+.Experiencia {
+  border-radius: 100%;
+  background-color: var(--color-primario);
+  width: 200px;
+  height: 200px;
+  padding: 2px;
+  place-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  left: 175vh;
+  top: 25vh;
+  transition-duration: 1.4s;
+}
+.Habilidades {
+  border-radius: 100%;
+  background-color: var(--color-primario);
+  width: 200px;
+  height: 200px;
+  padding: 2px;
+  place-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  left: 175vh;
+  top: 25vh;
+  transition-duration: 1.4s;
+}
+.relleno {
+  position: absolute;
+  width: 100px;
+  height: 15vh;
+  top: 25vh;
+  left: 175vh;
+  border-radius: 45px;
+}
+.infoPersonal {
+  opacity: 0%;
+  transition-duration: 0.9s;
+  position: absolute;
+  top: 28vh;
+  right: 5vh;
+}.FrasePersonal{
+    font-size: 35px;
+    width: 65%;
+    position: absolute;
     top: 35vh;
-}.Principal:hover .Habilidades{
-    left: 140vh;
-    top: 54vh;
-}.Principal:hover .relleno{
-    height: 79vh;
-    left: 28vh;
-    top: 18vh;
-    width: 185vh;
-    z-index: -1;
+    left: 15vh;
 }
 
+.Principal:hover .Sobre_Mi {
+  left: 50vh;
+  top: 65vh;
+}
+.Principal:hover .Educacion {
+  left: 35vh;
+  top: 20vh;
+}
+.Principal:hover .Experiencia {
+  left: 95vh;
+  top: 45vh;
+}
+.Principal:hover .Habilidades {
+  left: 140vh;
+  top: 54vh;
+}
+.Principal:hover .relleno {
+  height: 79vh;
+  left: 28vh;
+  top: 18vh;
+  width: 185vh;
+  z-index: -1;
+}
+.Principal:hover .infoPersonal {
+  opacity: 100%;
+  right: 50vh;
+}
+.Principal:hover .Foto {
+  opacity: 100%;
+}
 
-.header{
-    display: flex;
-    place-items: center;
-    justify-content: center;
+.header {
+  display: flex;
+  place-items: center;
+  justify-content: center;
 }
-h1{
-    margin: 0;
-    color: var(--color-negro);
-    text-align: center;
-}h2{
-    margin: 0;
-    color: rgb(0, 0, 0);
+h1 {
+  margin: 0;
+  color: var(--color-negro);
+  text-align: center;
 }
-i{
-    color: var(--color-secundario);
-    font-size: 25px;
+h2 {
+  margin: 0;
+  font-size: 35px;
+  font-family: fantasy;
+  font-style: oblique;
+  color: var(--color-primario);
 }
-
+a,
+i {
+  color: var(--color-secundario);
+  font-size: 25px;
+  font-family: monospace;
+  text-decoration: none;
+}
